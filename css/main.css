@@ -1,17 +1,58 @@
 body {
+  background: #a9ddd6;  
+  font-family: 'Josefin Sans', sans-serif;
   padding: 0;
 }
 
-nav {
-  background: #a9ddd6;
+nav a {
+  color: #fff;
 }
 
-nav a{
+h2{
   color:#bf1363;
+  font-weight: bold;
+  margin-bottom: 4%;
+}
+
+h3 {
+  color:#bf1363;
+  margin: 5% 0%;
+}
+
+h4 {
+  margin-top: 5%;
+}
+
+#landing nav,
+#about-me button {
+  background: #bf1363;
 }
 
 #home {
   display:none;
+}
+
+#about-me {
+  padding: 3% 0;
+}
+
+#about-me img {
+  width: 100%;  
+}
+
+#about-me p {
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+#about-me button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#about-me > div.row.skills img {
+  margin: 0 2%;
+  width: 3.5em;
 }
 
 .description-initial {
@@ -21,4 +62,10 @@ nav a{
 
 .description {
   margin-top: 15%;
+}
+
+.projects {
+  background-size: cover;
+  background-position: center;
+  height:15em;
 }

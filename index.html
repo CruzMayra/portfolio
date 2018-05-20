@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mayra Cruz | Frontend Developer</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/icon/logo-page.ico">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
@@ -51,18 +52,127 @@
       <div class="collapse navbar-collapse" id="landing-navbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Acerca de mí</a>
+            <a class="nav-link" href="#about-me">Acerca de mí</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Mi trabajo</a>
+            <a class="nav-link" href="#my-work">Mi trabajo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contáctame</a>
+            <a class="nav-link" href="#contact">Contáctame</a>
           </li>
         </ul>
       </div>
     </nav>
+
+    <section class="container" id="about-me">
+      <div class="row">
+        <div class="col-md-3">
+          <img class="profile" src="assets/images/profile.jpg" alt="mc-profile">
+        </div>
+        <div class="col-md-9 text-center about-me">
+          <h2>Acerca de mí</h2>
+          <div>
+            <h4>¡Hola! Soy Mayra Cruz</h4>
+            <p>Frontend developer egresada de la quinta generación de Laboratoria en México.</p>
+            <p>Tengo más de cuatro años de experiencia como asistente administrativo, trabajando para consultorías de crédito. Sin embargo, los últimos seis mesese los he pasado enamorandome del código.</p>
+            <p>Me gusta aprender por mi cuenta, asistir a meetups, encontrar inspiración en el trabajo de otros y los gatos :).</p>
+            <button type="button" class="btn btn-lg"><a href="assets/curriculum-mayra-cruz.pdf" target="_blank">Descarga mi CV</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="row skills">
+        <div class="col-md-12 text-center">
+          <h3>Skills</h3>
+        </div>
+        <div class="col-md-6">            
+          <img src="assets/images/javascript.svg" alt="">
+          <img src="assets/images/html-5.svg" alt="">
+          <img src="assets/images/css-3.svg" alt="">
+          <img src="assets/images/jquery.svg" alt="">
+          <img src="assets/images/git-icon.svg" alt="">
+        </div>
+        <div class="col-md-6">
+          <img src="assets/images/bootstrap.svg" alt="">
+          <img src="assets/images/materializecss.svg" alt="">
+          <img src="assets/images/npm.svg" alt="">
+          <img src="assets/images/firebase.svg" alt="">
+        </div>
+        <h4 class="col-md-7">También sé un poco de:</h4>        
+        <div class="col-md-7">
+          <img src="assets/images/excel.png" alt="">
+          <img src="assets/images/jasmine.svg" alt="">
+          <img src="assets/images/wordpress-icon.svg" alt="">
+          <img src="assets/images/sendgrid.svg" alt="">
+          <img src="assets/images/react.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="my-work">
+      <div class="row">
+        <h2 class="col-md-12">Mi trabajo</h2>
+        <div class="col-md-4 ">
+          <div class="card projects" style="background-image: url('assets/images/venus-01.jpg');">
+            <div class="card-body">
+              <h5 class="card-title">Venus e-commerce</h5>
+              <a href="/venus-ecommerce" class="btn">Acerca del proyecto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="card projects" style="background-image: url('assets/images/pokeapi-01.png');">
+            <div class="card-body">
+              <h5 class="card-title">Pokedex</h5>
+              <a href="/pokedex" class="btn">Acerca del proyecto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="card projects" style="background-image: url('assets/images/ticket-hack-logo.png');">
+            <div class="card-body">
+              <h5 class="card-title">Ticket-hack</h5>
+              <a href="/ticket-hack" class="btn">Acerca del proyecto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="card projects" style="background-image: url('assets/images/logo-scribere.png');">
+            <div class="card-body">
+              <h5 class="card-title">Scribere</h5>
+              <a href="/scribere" class="btn">Acerca del proyecto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="card projects" style="background-image: url('assets/images/lc-01.png');">
+            <div class="card-body">
+              <h5 class="card-title">LabCar</h5>
+              <a href="/labcar" class="btn">Acerca del proyecto</a>
+            </div>
+          </div>
+        </div>                             
+      </div>
+    </section>
   </section>
+
+  <footer class="container" id="contact">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Contáctame</h2>
+      <p><i class="far fa-envelope"></i><a href="mailto:#">velazquez.leonora@gmail.com</a></p>
+    </div>
+    <div class="col-md-4">
+      <a class="" href="https://github.com/cruzmayra/" target="_blank"><i class="fab fa-github"></i></a>
+      <a class="" href="https://www.linkedin.com/in/cruz-mayra" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a class="" href="https://www.facebook.com/cruz.mayr4" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <button><a href="assets/curriculum-mayra-cruz.pdf" target="_blank">Descarga mi CV</a></button>
+      <p>Trabajemos juntos :)</p>      
+    </div>
+    <div>
+      <p>© 2018 Coded with <i class="fas fa-heart"></i> by Mayra Cruz</p>
+    </div>
+  </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
