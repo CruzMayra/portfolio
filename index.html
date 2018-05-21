@@ -66,10 +66,10 @@
 
     <section class="container" id="about-me">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4">
           <img class="profile" src="assets/images/profile.jpg" alt="mc-profile">
         </div>
-        <div class="col-md-9 text-center about-me">
+        <div class="col-md-8 text-center about-me">
           <h2>Acerca de mí</h2>
           <div>
             <h4>¡Hola! Soy Mayra Cruz</h4>
@@ -82,7 +82,7 @@
       </div>
       <div class="row skills">
         <div class="col-md-12 text-center">
-          <h3>Skills</h3>
+          <h3>Habilidades</h3>
         </div>
         <div class="col-md-6">            
           <img src="assets/images/javascript.svg" alt="">
@@ -90,12 +90,20 @@
           <img src="assets/images/css-3.svg" alt="">
           <img src="assets/images/jquery.svg" alt="">
           <img src="assets/images/git-icon.svg" alt="">
+          <div class="progress-bar intermedio stripes">
+            <span style="width: 50%"></span>
+          </div>
+          <p>Intermedio</p>
         </div>
         <div class="col-md-6">
           <img src="assets/images/bootstrap.svg" alt="">
           <img src="assets/images/materializecss.svg" alt="">
           <img src="assets/images/npm.svg" alt="">
           <img src="assets/images/firebase.svg" alt="">
+          <div class="progress-bar basic stripes">
+            <span style="width: 33%"></span>
+          </div>
+          <p>Básico</p>
         </div>
         <h4 class="col-md-7">También sé un poco de:</h4>        
         <div class="col-md-7">
@@ -111,41 +119,42 @@
     <section class="container" id="my-work">
       <div class="row">
         <h2 class="col-md-12">Mi trabajo</h2>
-        <div class="col-md-4 ">
+
+        <div class="col-md-4 project-item">
           <div class="card projects" style="background-image: url('assets/images/venus-01.jpg');">
-            <div class="card-body">
+            <div class="card-body text-center description-project">
               <h5 class="card-title">Venus e-commerce</h5>
               <a href="/venus-ecommerce" class="btn">Acerca del proyecto</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4 ">
+        <div class="col-md-4 project-item">
           <div class="card projects" style="background-image: url('assets/images/pokeapi-01.png');">
-            <div class="card-body">
+            <div class="card-body description-project text-center">
               <h5 class="card-title">Pokedex</h5>
               <a href="/pokedex" class="btn">Acerca del proyecto</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4 ">
+        <div class="col-md-4 project-item">
           <div class="card projects" style="background-image: url('assets/images/ticket-hack-logo.png');">
-            <div class="card-body">
+            <div class="card-body text-center description-project">
               <h5 class="card-title">Ticket-hack</h5>
               <a href="/ticket-hack" class="btn">Acerca del proyecto</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4 ">
+        <div class="col-md-4 project-item">
           <div class="card projects" style="background-image: url('assets/images/logo-scribere.png');">
-            <div class="card-body">
+            <div class="card-body text-center description-project">
               <h5 class="card-title">Scribere</h5>
               <a href="/scribere" class="btn">Acerca del proyecto</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4 ">
-          <div class="card projects" style="background-image: url('assets/images/lc-01.png');">
-            <div class="card-body">
+        <div class="col-md-4 project-item">
+          <div class="card projects" style="background-image: url('assets/images/conduce.jpg');">
+            <div class="card-body text-center description-project">
               <h5 class="card-title">LabCar</h5>
               <a href="/labcar" class="btn">Acerca del proyecto</a>
             </div>
@@ -155,20 +164,23 @@
     </section>
   </section>
 
-  <footer class="container" id="contact">
+  <footer class="container-fluid" id="contact">
   <div class="row">
-    <div class="col-md-4">
-      <h2>Contáctame</h2>
+    <div class="col-md-4 text-center align-items-center">
+      <h2 class="h2-footer">Contáctame</h2>
+      <br>
       <p><i class="far fa-envelope"></i><a href="mailto:#">velazquez.leonora@gmail.com</a></p>
     </div>
-    <div class="col-md-4">
-      <a class="" href="https://github.com/cruzmayra/" target="_blank"><i class="fab fa-github"></i></a>
-      <a class="" href="https://www.linkedin.com/in/cruz-mayra" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      <a class="" href="https://www.facebook.com/cruz.mayr4" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <button><a href="assets/curriculum-mayra-cruz.pdf" target="_blank">Descarga mi CV</a></button>
+    <div class="col-md-4 text-center">
+      <div class="social-network">
+        <a class="" href="https://github.com/cruzmayra/" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="" href="https://www.linkedin.com/in/cruz-mayra" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a class="" href="https://www.facebook.com/cruz.mayr4" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <button type="button" class="btn btn-lg cv-footer"><a href="assets/curriculum-mayra-cruz.pdf" target="_blank">Descarga mi CV</a></button>      
       <p>Trabajemos juntos :)</p>      
     </div>
-    <div>
+    <div class="col-md-4 d-flex justify-content-center align-items-center">
       <p>© 2018 Coded with <i class="fas fa-heart"></i> by Mayra Cruz</p>
     </div>
   </div>
