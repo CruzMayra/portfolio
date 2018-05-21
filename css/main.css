@@ -24,6 +24,10 @@ h4 {
   margin-top: 2%;
 }
 
+footer {
+  margin-top: 4%;
+}
+
 footer,
 #landing nav,
 .intermedio span,
@@ -32,12 +36,17 @@ footer,
   background: #bf1363;
 }
 
-#landing nav {
-  float: unset;
+#home a {
+  color: #bf1363;
+  text-decoration: none;
 }
 
-#home {
+.hide {
   display:none;
+}
+
+.show {
+  display: block;
 }
 
 #about-me {
@@ -51,6 +60,10 @@ footer,
 #about-me p {
   font-size: 1.1em;
   text-align: justify;
+}
+
+#landing-navbar {
+  margin-left: 65%;
 }
 
 footer a,
@@ -74,6 +87,8 @@ footer a:hover,
 
 .description-initial {
   background: #a9ddd6;
+  font-size: 1.5em;
+  font-weight: 600;
   height: 90vh;
 }
 
@@ -146,5 +161,6 @@ footer a:hover,
 }
 
 .social-network a {
+  font-size: 2em;  
   margin: 3%;
 }

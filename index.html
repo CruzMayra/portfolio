@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <section id="home">
+  <section class="show" id="home">
     <nav class="navbar navbar-expand-lg justify-content-between row">
       <a class="navbar-brand" href="/">
         <img src="/assets/images/mc-logo.png" width="50" height="50" class="d-inline-block align-top" alt="mc-logo">
@@ -40,10 +40,10 @@
     </section>
   </section>
 
-  <section id="landing">
+  <section class="hide" id="landing">
     <nav class="navbar navbar-expand-lg">  
       <a class="navbar-brand" href="/">
-        <img src="/assets/images/mc-logo.png" width="50" height="50" alt="mc-logo">
+        <img src="/assets/images/mc-logo-white.png" width="50" height="50" alt="mc-logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#landing-navbar" aria-controls="landing-navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
@@ -66,10 +66,10 @@
 
     <section class="container" id="about-me">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-12 text-center">
           <img class="profile" src="assets/images/profile.jpg" alt="mc-profile">
         </div>
-        <div class="col-md-8 text-center about-me">
+        <div class="col-md-8 col-sm-12 text-center about-me">
           <h2>Acerca de mí</h2>
           <div>
             <h4>¡Hola! Soy Mayra Cruz</h4>
@@ -124,7 +124,7 @@
           <div class="card projects" style="background-image: url('assets/images/venus-01.jpg');">
             <div class="card-body text-center description-project">
               <h5 class="card-title">Venus e-commerce</h5>
-              <a href="/venus-ecommerce" class="btn">Acerca del proyecto</a>
+              <a href="/venus-ecommerce" data-name="venus" class="btn">Acerca del proyecto</a>
             </div>
           </div>
         </div>
@@ -162,32 +162,34 @@
         </div>                             
       </div>
     </section>
-  </section>
 
-  <footer class="container-fluid" id="contact">
-  <div class="row">
-    <div class="col-md-4 text-center align-items-center">
-      <h2 class="h2-footer">Contáctame</h2>
-      <br>
-      <p><i class="far fa-envelope"></i><a href="mailto:#">velazquez.leonora@gmail.com</a></p>
-    </div>
-    <div class="col-md-4 text-center">
-      <div class="social-network">
-        <a class="" href="https://github.com/cruzmayra/" target="_blank"><i class="fab fa-github"></i></a>
-        <a class="" href="https://www.linkedin.com/in/cruz-mayra" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a class="" href="https://www.facebook.com/cruz.mayr4" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <footer class="container-fluid" id="contact">
+      <div class="row">
+        <div class="col-md-4 text-center align-items-center">
+          <h2 class="h2-footer">Contáctame</h2>
+          <br>
+          <p><i class="far fa-envelope"></i><a href="mailto:#">velazquez.leonora@gmail.com</a></p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="social-network">
+            <a class="" href="https://github.com/cruzmayra/" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="" href="https://www.linkedin.com/in/cruz-mayra" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="" href="https://www.facebook.com/cruz.mayr4" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <button type="button" class="btn btn-lg cv-footer"><a href="assets/curriculum-mayra-cruz.pdf" target="_blank">Descarga mi CV</a></button>      
+          <p>Trabajemos juntos :)</p>      
+        </div>
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <p>© 2018 Coded with <i class="fas fa-heart"></i> by Mayra Cruz</p>
+        </div>
       </div>
-      <button type="button" class="btn btn-lg cv-footer"><a href="assets/curriculum-mayra-cruz.pdf" target="_blank">Descarga mi CV</a></button>      
-      <p>Trabajemos juntos :)</p>      
-    </div>
-    <div class="col-md-4 d-flex justify-content-center align-items-center">
-      <p>© 2018 Coded with <i class="fas fa-heart"></i> by Mayra Cruz</p>
-    </div>
-  </div>
-  </footer>
+      </footer>
+      
+  </section>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
