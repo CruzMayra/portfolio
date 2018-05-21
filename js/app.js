@@ -15,7 +15,7 @@ function loadPage() {
   $('#landing').addClass('show');
  }
 
- $('.view-venus').click(function(e){
+ $('.view').click(function(e){
   e.preventDefault();
   const pageRef = e.target.getAttribute('href');
   page(pageRef);
@@ -23,7 +23,22 @@ function loadPage() {
 
 page('/venus-ecommerce', e => {
   getData(e.path);
-  
+})
+
+page('/pokedex', e => {
+  getData(e.path);
+})
+
+page('/ticket-hack', e => {
+  getData(e.path);
+})
+
+page('/scribere', e => {
+  getData(e.path);
+})
+
+page('/labcar', e => {
+  getData(e.path);
 })
 
  function getData(dataProject) {
