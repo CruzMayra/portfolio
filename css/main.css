@@ -9,6 +9,10 @@ nav a,
   color: #fff;
 }
 
+#home nav a {
+ font-size: 1.7em;  
+}
+
 h2{
   color:#bf1363;
   font-weight: bold;
@@ -80,9 +84,37 @@ footer a:hover,
   text-decoration: none;
 }
 
-#about-me > div.row.skills img {
-  margin: 0 2%;
-  width: 3.5em;
+#about-me > div.row.skills > div img {
+  /* margin: 0 2%; */
+  width: 3em;
+}
+
+#about-me > div.row.skills > div i {
+  color:#bf1363;
+  font-size: 3.5em;
+}
+
+#about-me > div.row.skills > div.col-md-6 > div > div > div > div > p > i {
+  font-size: 3em;
+}
+
+#about-me > div.row.skills > div.col-md-6 > div > div > div > div > p > img {
+  margin-bottom: 46px;
+  width: 3em;
+}
+
+#about-me > div.row.skills > div.soft {
+  background: #bf1363;
+  color: #fff;
+}
+
+#about-me > div.row.skills > div.soft > h3 {
+  color: #fff;
+}
+
+#about-me > div.row.skills > div.soft i {
+  color: #a9ddd6;
+  font-size: 2.6em;
 }
 
 #projects h4,
@@ -180,4 +212,12 @@ footer a:hover,
 
 .details-project {
   border-left: 2px solid #bf1363;
+}
+
+.project-d img {
+  width: 50%;
+}
+
+.project-d .col-md-9 > p {
+  text-align: justify;
 }

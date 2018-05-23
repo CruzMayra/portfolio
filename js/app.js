@@ -55,7 +55,7 @@ page('/labcar', e => {
    <section class="jumbotron">
      <div class="container text-center">
        <h2 class="name">${project.name}</h2>
-       <img src="${project.image}" alt="">   
+       <img src="${project.image[0]}" alt="">   
      </div> 
    </section>
  
@@ -64,6 +64,7 @@ page('/labcar', e => {
        <div class="col-md-9">
          <h3>Descripción del proyecto</h3>
          <p>${project.description}</p>
+         <img src="${project.image[1]}" alt="">         
        </div>
        <div class="col-md-3 details-project">
          <div>
